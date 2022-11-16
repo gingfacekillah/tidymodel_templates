@@ -1,1 +1,14 @@
 
+# Libraries
+library(tidyverse)              # Core tidyverse functions
+library(corrr)                  # Correlation
+library(ggplot2)                # Plots
+library(parsnip)                # ML Engines (random forest, KNN, xgBoost)
+library(bonsai)                 # ML Engines (LightGBM)
+library(workflows)              # Modeling workflows
+library(recipes)                # Preprocessing recipies
+library(rsample)                # Resampling
+library(tune)                   # Parameter tuning
+library(dials)                  # Adjustments
+library(yardstick)              # Evaluation metrics
+library(vip)                    # Variable importance
