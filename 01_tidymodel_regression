@@ -1,4 +1,4 @@
-# Libraries
+#### 1. Libraries ----
 library(tidyverse)              # Core tidyverse functions
 library(corrr)                  # Correlation
 library(ggplot2)                # Plots
@@ -11,3 +11,31 @@ library(tune)                   # Parameter tuning
 library(dials)                  # Adjustments
 library(yardstick)              # Evaluation metrics
 library(vip)                    # Variable importance
+library(MASS)                   # Sample data
+
+#### 2. Load data ----
+data <- Boston
+
+#### 3. Exploratory data analysis ----
+#-- Plotting crime vs. median value
+data %>%
+    ggplot(aes(crim, medv))+
+    geom_point(alpha = 0.4)+
+    scale_x_log10()+
+    scale_y_log10()+
+    geom_point(color = 'midnightblue') +
+    geom_smooth(method = 'lm', color = "tomato", se = T)+
+    ggtitle("Median Value vs Crime") +
+    xlab("Crime") +
+    ylab("Median Value")
+
+#-- Variable correlation    
+data_corr <- data %>%
+    correlate()%>%
+    rearrange() %>%
+    shave() %>%
+    print()
+
+#### Build Models ----
+
+#### Explore results ----
