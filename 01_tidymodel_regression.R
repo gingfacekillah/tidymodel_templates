@@ -26,7 +26,7 @@ data %>%
     scale_x_log10()+
     scale_y_log10()+
     geom_point(color = 'midnightblue') +
-    geom_smooth(method = 'lm', color = "tomato", se = T)+
+    geom_smooth(method = 'lm', color = "tomato", se = T) +
     ggtitle("Median Value vs Crime") +
     xlab("Crime") +
     ylab("Median Value")
