@@ -1,3 +1,7 @@
+# Tidymodel Tempate: Regression, Multiple Models, Quick n' Dirty
+# In this template multiple regression models (xgBoost, Random Forest, LightGBM, Decision Tree, Bayesian Linear Regression, KNN) are
+# quickly fitted on training data with minimal tuning. After finding a decent model, tune the grid to your requirements.
+
 #### 1. Libraries ----
 library(tidyverse)              # Core tidyverse functions
 library(tidymodels)             # Tidymodels 
