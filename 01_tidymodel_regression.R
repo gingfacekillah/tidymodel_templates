@@ -1,3 +1,6 @@
+# Tidymodel Tempate: Regression, 1 Model, Full Parameter Optimization
+# In this template one model (xgboost regression) is selected and tuned.
+
 #### 1. Libraries ----
 library(tidyverse)              # Core tidyverse functions
 library(tidymodels)             # Tidymodels 
