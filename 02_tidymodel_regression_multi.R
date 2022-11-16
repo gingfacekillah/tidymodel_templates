@@ -106,7 +106,7 @@ model_workflow <- workflow() %>%
 ##-- Model training outputs
 #-- Bayesian linear regression
 lm_results <- model_workflow %>%
-    add_model(rf_spec) %>%
+    add_model(lm_spec) %>%
     fit_resamples(
         resamples = data_resamples,
         control = control_resamples(save_pred = TRUE, verbose = TRUE))
